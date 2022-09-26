@@ -1,3 +1,5 @@
+package com.rizky.pratikum1;
+
 import java.util.Scanner;
 
 public class Pratikum1 {
@@ -16,19 +18,17 @@ public class Pratikum1 {
             System.out.print("Masukkan NIM Anda: ");
             nimMhs = scn.nextLine();
 
-            if (nimMhs.length() != "202110370311".length()) {
+            String nim = nimMhs.substring(4, 12);
+            String num = "10370311";
+
+            if (!nim.equals(num)) {
                 throw new Exception("NIM informatika harus memiliki kode 10370311");
-            } else {
-                System.out.println("NIM Anda: " + getNimMhs());
+            } else if (nimMhs.length() > 15) {
+                throw new Exception("NIM tidak boleh lebih dari 15 karakter");
+            } else if (nimMhs.length() < 15) {
+                throw new Exception("NIM tidak boleh kurang dari 15 karakter");
             }
 
-//            if (nimMhs.length() > 15) {
-//                throw new Exception("NIM tidak boleh lebih dari 15 karakter");
-//            } else if (nimMhs.length() < 15) {
-//                throw new Exception("NIM tidak boleh kurang dari 15 karakter");
-//            } else {
-//                System.out.println("NIM Anda: " + nimMhs);
-//            }
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
@@ -37,10 +37,11 @@ public class Pratikum1 {
         }
     }
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         Pratikum1 p1 = new Pratikum1();
         p1.setNimMhs();
+        System.out.println("NIM Anda: " + p1.getNimMhs());
 
     }
 }
