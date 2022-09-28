@@ -1,7 +1,5 @@
 package com.rizky.pratikum5;
 
-import org.json.simple.parser.ParseException;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -10,9 +8,9 @@ import java.net.http.HttpResponse;
 
 public class Pratikum5_2 {
 
-    public void method() throws IOException, InterruptedException, ParseException {
+    public void method() throws IOException, InterruptedException {
 
-//    URL url = new URL("https://jsonplaceholder.typicode.com/users");
+        // URL url = new URL("https://jsonplaceholder.typicode.com/users");
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -21,10 +19,13 @@ public class Pratikum5_2 {
 
         HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-        System.out.println(response);
+        if (response.statusCode() == 200) {
+            Object pp = response.body();
 
-        Object pp = response.body();
-        System.out.println(pp);
+            System.out.println(pp);
+        } else {
+            System.out.println("Response 404");
+        }
 
     }
 
@@ -33,7 +34,7 @@ public class Pratikum5_2 {
         Pratikum5_2 p5 = new Pratikum5_2();
         try {
             p5.method();
-        } catch (IOException | InterruptedException | ParseException e) {
+        } catch (IOException | InterruptedException e ) {
             e.printStackTrace();
         }
 
