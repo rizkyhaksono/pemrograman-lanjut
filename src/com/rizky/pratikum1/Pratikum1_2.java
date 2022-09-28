@@ -2,7 +2,7 @@ package com.rizky.pratikum1;
 
 import java.util.Scanner;
 
-public class Pratikum1 {
+public class Pratikum1_2 {
 
     Scanner scn = new Scanner(System.in);
     private String nimMhs;
@@ -39,7 +39,7 @@ public class Pratikum1 {
 
         public static void main(String[] args) {
 
-        Pratikum1 p1 = new Pratikum1();
+        Pratikum1_2 p1 = new Pratikum1_2();
         p1.setNimMhs();
         System.out.println("NIM Anda: " + p1.getNimMhs());
 
