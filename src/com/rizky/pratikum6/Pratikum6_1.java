@@ -4,47 +4,97 @@
 
 package com.rizky.pratikum6;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Pratikum6_1 {
-    public static void main(String[] args) {
-        int[] inNumber;
-        int[] inString;
 
-        int n, i;
+    public void method() throws IOException {
+        int[] inNumber = new int[100];
+        int[] inString = new int[100];
 
         Scanner scn = new Scanner(System.in);
 
+        File file = new File("src/com/rizky/pratikum6/database.txt");
+        FileWriter fw = new FileWriter(file);
+
+        System.out.println("1. String\n2. Int");
         System.out.print("Masukkan inputan anda : ");
-        int temp = scn.nextInt();
+        int input = scn.nextInt();
 
-        try {
-            if (temp != 0) {
-                System.out.println(temp);
-            } else if (temp) {
-                System.out.println("Tidak ada isi nya");
-            } else {
-                System.out.println("Tidak ada inputan yang benar");
-            }
+        switch (input) {
+            case 1:
+                String str;
 
-            for(int index = 0; temp[i].nimCek[index] != '\0'; index++) { // \0 =  diatur agar semua bit menjadi tidak nol
-                // tanda !"#$%&'()*+`-'/
-                if(temp[i].nim[index] >= 0x30 && temp[i].nimCek[index] <= 0x39){
-                    System.out.println("Tidak boleh ada angka diantaranya");
+                System.out.print("Masukkan berapa jumlah String : ");
 
-                    break;
-                    // tanda :;<=>?@
-                }else if(temp[i].nimCek[index] >= 0x3A && temp[i].nimCek[index] <= 0x40){
-                    System.out.println("Tidak boleh ada String diantaranya");
+                ulang();
 
-                    break;
+                break;
+            case 2:
+                int n = 0;
+
+                try {
+
+                    System.out.print("Masukkan berapa elemen yang anda mau : ");
+                    n = scn.nextInt();
+
+                    System.out.println("Masukkan data elemen : ");
+                    for (int i = 0; i < n; i++) {
+                        inNumber[i] = scn.nextInt();
+                    }
+
+                } catch (Exception e) {
+                    System.out.println("Error : " + e);
                 }
-            }
 
+                System.out.print("Element anda adalah : ");
+                System.out.print("{ ");
+                for (int i = 0; i < n; i++) {
+                    System.out.print(inNumber[i] + ", ");
+                    fw.append(String.valueOf(inNumber[i])).append(", ");
 
-        } catch (Exception e) {
-            System.out.println("Error : " + e);
+                }
+
+                System.out.print("}");
+
+                ulang();
+
+                fw.flush();
+                fw.close();
+                break;
+
+            default:
+                System.out.println("\nTidak ada inputan selain 1 dan 2!");
+                method();
+                break;
         }
     }
 
+    public void ulang() throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\n\nApakah anda ingin mengulang ? [y/n] : ");
+
+        String inputan = scanner.nextLine();
+
+        if (inputan.equals("y")) {
+            method();
+        } else if (inputan.equals("n")) {
+            System.out.println("Terima kasih telah menggunakan program ini!");
+        } else {
+            System.out.println("Inputan anda salah");
+            ulang();
+        }
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        Pratikum6_1 p6 = new Pratikum6_1();
+
+        p6.method();
+
+    }
 }
