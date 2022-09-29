@@ -1,7 +1,10 @@
 /*
 @author: rizkyhaksono
- */
+*/
 
+/*
+    Java library for input and output (I/O) operations
+ */
 package com.rizky.pratikum6;
 
 import java.io.File;
@@ -11,6 +14,9 @@ import java.util.Scanner;
 
 public class Pratikum6_1 {
 
+    /*
+        This is a method to write a file
+     */
     public void method() throws IOException {
         int[] inNumber = new int[100];
         int[] inString = new int[100];
@@ -26,6 +32,9 @@ public class Pratikum6_1 {
 
         switch (input) {
             case 1:
+                /*
+                    This is for String input and output through file
+                */
                 String str;
 
                 System.out.print("Masukkan berapa jumlah String : ");
@@ -34,10 +43,12 @@ public class Pratikum6_1 {
 
                 break;
             case 2:
+                /*
+                    This is for Integer input and output through file
+                 */
                 int n = 0;
 
                 try {
-
                     System.out.print("Masukkan berapa elemen yang anda mau : ");
                     n = scn.nextInt();
 
@@ -65,14 +76,19 @@ public class Pratikum6_1 {
                 fw.flush();
                 fw.close();
                 break;
-
             default:
+                /*
+                    This is for default output for wrong input
+                 */
                 System.out.println("\nTidak ada inputan selain 1 dan 2!");
                 method();
                 break;
         }
     }
 
+    /*
+        This is for looping the program and ask user to continue or not
+     */
     public void ulang() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\n\nApakah anda ingin mengulang ? [y/n] : ");
@@ -90,11 +106,12 @@ public class Pratikum6_1 {
 
     }
 
+    /*
+        This is for main method
+     */
     public static void main(String[] args) throws IOException {
-
         Pratikum6_1 p6 = new Pratikum6_1();
 
         p6.method();
-
     }
 }
