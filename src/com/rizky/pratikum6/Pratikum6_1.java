@@ -1,15 +1,16 @@
 /*
-@author: rizkyhaksono
+    @author: rizkyhaksono
 */
 
 /*
     Java library for input and output (I/O) operations
- */
+*/
 package com.rizky.pratikum6;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Pratikum6_1 {
@@ -19,70 +20,85 @@ public class Pratikum6_1 {
      */
     public void method() throws IOException {
         int[] inNumber = new int[100];
-        int[] inString = new int[100];
+        String[] inString = new String[100];
 
         Scanner scn = new Scanner(System.in);
+        Scanner scnInt = new Scanner(System.in);
+        Scanner scnStr = new Scanner(System.in);
 
         File file = new File("src/com/rizky/pratikum6/database.txt");
         FileWriter fw = new FileWriter(file);
 
         System.out.println("1. String\n2. Int");
         System.out.print("Masukkan inputan anda : ");
+
         int input = scn.nextInt();
 
         switch (input) {
-            case 1:
+            case 1 -> {
                 /*
                     This is for String input and output through file
                 */
-                String str;
+                String str = null;
+                try {
+                    System.out.print("Masukkan berapa elemen yang anda mau : ");
+                    str = scnStr.nextLine();
 
-                System.out.print("Masukkan berapa jumlah String : ");
+                    System.out.println("Masukkan data elemen : ");
 
+                    for (int i = 0; i < Integer.parseInt(str); i++) {
+                        inString[i] = scnStr.nextLine();
+                    }
+
+                } catch (Exception e) {
+                    System.out.println("Error : " + e);
+                }
+                System.out.print("Element anda adalah : ");
+                System.out.print("{ ");
+                for (int i = 0; i < Integer.parseInt(Objects.requireNonNull(str)); i++) {
+                    System.out.print(inString[i] + ", ");
+                    fw.append(inString[i]).append(", ");
+                }
+                System.out.print("}");
                 ulang();
-
-                break;
-            case 2:
+                fw.flush();
+                fw.close();
+            }
+            case 2 -> {
                 /*
                     This is for Integer input and output through file
                  */
-                int n = 0;
-
+                int integer = 0;
                 try {
                     System.out.print("Masukkan berapa elemen yang anda mau : ");
-                    n = scn.nextInt();
+                    integer = scnInt.nextInt();
 
                     System.out.println("Masukkan data elemen : ");
-                    for (int i = 0; i < n; i++) {
+                    for (int i = 0; i < integer; i++) {
                         inNumber[i] = scn.nextInt();
                     }
 
                 } catch (Exception e) {
                     System.out.println("Error : " + e);
                 }
-
                 System.out.print("Element anda adalah : ");
                 System.out.print("{ ");
-                for (int i = 0; i < n; i++) {
+                for (int i = 0; i < integer; i++) {
                     System.out.print(inNumber[i] + ", ");
                     fw.append(String.valueOf(inNumber[i])).append(", ");
-
                 }
-
                 System.out.print("}");
-
                 ulang();
-
                 fw.flush();
                 fw.close();
-                break;
-            default:
+            }
+            default -> {
                 /*
                     This is for default output for wrong input
                  */
                 System.out.println("\nTidak ada inputan selain 1 dan 2!");
                 method();
-                break;
+            }
         }
     }
 
