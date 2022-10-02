@@ -29,7 +29,7 @@ public class Pratikum6_1 {
         File file = new File("src/com/rizky/pratikum6/database.txt");
         FileWriter fw = new FileWriter(file);
 
-        System.out.println("1. String\n2. Int");
+        System.out.println("1. String\n2. Int\n3. Exit");
         System.out.print("Masukkan inputan anda : ");
 
         int input = scn.nextInt();
@@ -91,6 +91,10 @@ public class Pratikum6_1 {
                 ulang();
                 fw.flush();
                 fw.close();
+            }
+            case 3 -> {
+                System.out.println("Terima kasih telah menggunakan program ini");
+                System.exit(0);
             }
             default -> {
                 /*
