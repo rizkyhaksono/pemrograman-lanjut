@@ -1,0 +1,3 @@
+[Integer]
+Hasil inputan anda : [10, 20]
+

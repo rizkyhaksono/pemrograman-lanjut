@@ -1,0 +1,6 @@
+[Integer]
+Hasil inputan anda : [10, 20]
+
+[String]
+Hasil inputan anda : [apa, aja, ya]
+
