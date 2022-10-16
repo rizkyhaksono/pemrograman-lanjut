@@ -26,8 +26,6 @@ public class Pratikum6_1 {
         FileWriter fw = new FileWriter(file, true);
         BufferedWriter bw = new BufferedWriter(fw);
 
-        Thread thread = new Thread();
-
         Scanner input;
         int jumlah;
 
@@ -80,6 +78,15 @@ public class Pratikum6_1 {
 
         } else {
             System.out.println("Inputan tidak sesuai!");
+            main(args);
+        }
+
+        Scanner ulang = new Scanner(System.in);
+
+        System.out.print("Masukkan data lagi? (y/n) : ");
+        String yesNo = ulang.nextLine();
+
+        while(yesNo.equals("y")) {
             main(args);
         }
 

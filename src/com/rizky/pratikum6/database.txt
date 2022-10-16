@@ -4,3 +4,12 @@ Hasil inputan anda : [10, 20]
 [String]
 Hasil inputan anda : [apa, aja, ya]
 
+[String]
+Hasil inputan anda : [apa, 0, apa]
+
+[String]
+Hasil inputan anda : [apa, apa]
+
+[Integer]
+Hasil inputan anda : [10, 20, 30]
+
