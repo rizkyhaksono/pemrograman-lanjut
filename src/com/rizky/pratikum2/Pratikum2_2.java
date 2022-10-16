@@ -4,13 +4,16 @@
 
 package com.rizky.pratikum2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Pratikum2_2 {
 
-    public String[] book = new String[1];
-    public String[] place = new String[1];
-    public int[] date = new int[1];
+    public static int index = 1;
+
+    public static String[] book = new String[1];
+    public static String[] place = new String[1];
+    public static int[] date = new int[1];
 
     void cekDate(int date) {
         if (date < 2018 || date > 2022) {
@@ -84,11 +87,10 @@ public class Pratikum2_2 {
             String placeName = inFrom;
             int dateName = inDate;
 
-            for (int i = 0; i < pTwo.book.length && i < pTwo.place.length && i < pTwo.date.length; i++) {
-                pTwo.book[i] = bookName;
-                pTwo.place[i] = placeName;
-                pTwo.date[i] = dateName;
-            }
+            book[index-1] = bookName;
+            place[index-1] = placeName;
+            date[index-1] = dateName;
+
 
             System.out.println("Buku berhasil ditambahan");
             pTwo.list();
@@ -97,10 +99,21 @@ public class Pratikum2_2 {
             System.out.print("\nTambah buku lagi? [y/n] ");
             String ask = input.next();
             if (ask.equals("y")) {
+                index++;
+                book = Arrays.copyOf(book, book.length + 1);
+                place = Arrays.copyOf(place, place.length + 1);
+                date = Arrays.copyOf(date, date.length + 1);
                 main(args);
             } else {
+                for(int i = 0; i < index; i++){
+                    int nomor = i+1;
+                    System.out.println("\nData buku ke - " + nomor);
+                    System.out.println("Nama :" + book[i]);
+                    System.out.println("From :" + place[i]);
+                    System.out.println("Date :" + date[i]);
+                }
                 System.exit(0);
-                System.out.println("Terima kasih");
+
             }
 
         } catch (Exception e) {

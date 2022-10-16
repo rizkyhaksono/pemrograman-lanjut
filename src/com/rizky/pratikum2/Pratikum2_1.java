@@ -1,3 +1,7 @@
+/*
+@author: rizkyhaksono
+ */
+
 package com.rizky.pratikum2;
 
 import java.util.Scanner;
