@@ -59,7 +59,8 @@ public class Pratikum2_1 {
             }
 
         } catch (Exception e) {
-            System.out.println("Error :" + e);
+            System.out.println("Email tidak valid");
+//            System.out.println("Error : " + e);
 
             setEmailMhs();
         }
@@ -86,6 +87,8 @@ public class Pratikum2_1 {
 
             if (telp.length() > 15) {
                 throw new Exception("Nomor telpon tidak boleh lebih 15 karakter");
+            } else if (telp.length() < 11) {
+                throw new Exception("Nomor telpon tidak boleh kurang dari 10 karakter");
             }
 
         } catch (Exception e) {

@@ -108,12 +108,12 @@ public class Pratikum2_2 {
                 for(int i = 0; i < index; i++){
                     int nomor = i+1;
                     System.out.println("\nData buku ke - " + nomor);
-                    System.out.println("Nama :" + book[i]);
-                    System.out.println("From :" + place[i]);
-                    System.out.println("Date :" + date[i]);
+                    System.out.println("Nama : " + book[i]);
+                    System.out.println("From : " + place[i]);
+                    System.out.println("Date : " + date[i]);
                 }
+                System.out.println("\nTerima kasih telah menggunakan aplikasi ini");
                 System.exit(0);
-
             }
 
         } catch (Exception e) {
