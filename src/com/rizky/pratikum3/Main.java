@@ -1,3 +1,7 @@
+/*
+@author: rizkyhaksono
+ */
+
 package com.rizky.pratikum3;
 
 public class Main {

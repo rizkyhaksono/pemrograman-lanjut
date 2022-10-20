@@ -1,3 +1,7 @@
+/*
+@author: rizkyhaksono
+ */
+
 package com.rizky.pratikum4;
 
 public class Pratikum4_2 {
