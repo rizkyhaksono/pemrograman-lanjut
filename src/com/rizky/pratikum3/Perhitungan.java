@@ -18,15 +18,11 @@ public class Perhitungan {
 //                Math.round(Math.cbrt(input)) *
 //                Math.round(Math.cbrt(input)) == input;
 //    }
-
     static boolean isCube(long input) {
-        return extractMethod(input);
-    }
-
-    private static boolean extractMethod(long input) {
-        return Math.round(Math.cbrt(input)) *
+        boolean extractVariable = Math.round(Math.cbrt(input)) *
                 Math.round(Math.cbrt(input)) *
                 Math.round(Math.cbrt(input)) == input;
+        return extractVariable;
     }
 
 }

@@ -4,27 +4,21 @@
 
 package com.rizky.pratikum3;
 
-import java.util.Scanner;
-
 public class Balok {
 
     private int panjang, lebar, tinggi;
 
-    Scanner scn = new Scanner(System.in);
 
-    public void setPanjang() {
-        System.out.print("Masukkan panjang : ");
-        this.panjang = scn.nextInt();
+    public void setPanjang(int setPanjang) {
+        this.panjang = setPanjang;
     }
 
-    public void setLebar() {
-        System.out.print("Masukkan lebar : ");
-        this.lebar = scn.nextInt();
+    public void setLebar(int setLebar) {
+        this.lebar = setLebar;
     }
 
-    public void setTinggi() {
-        System.out.print("Masukkan tinggi : ");
-        this.tinggi = scn.nextInt();
+    public void setTinggi(int setTinggi) {
+        this.tinggi = setTinggi;
     }
 
     public int getPanjang() {
