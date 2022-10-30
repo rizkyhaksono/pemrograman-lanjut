@@ -35,6 +35,7 @@ public class Balok {
 
     protected void hasil() {
         Perhitungan ph = new Perhitungan();
+
         System.out.println("\nHasil luas balok : " + ph.luas(this));
         System.out.println("Hasil volume balok : " + ph.volume(this));
     }
