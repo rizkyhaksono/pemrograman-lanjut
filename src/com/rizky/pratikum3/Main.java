@@ -14,5 +14,7 @@ public class Main {
         balok.setTinggi(30);
 
         balok.hasil();
+
+        System.out.println(Perhitungan.isCube(-27));
     }
 }
