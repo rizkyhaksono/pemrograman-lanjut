@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum3/Balok.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum3/Balok.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Balok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum3/Balok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Perhitungan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum3/Perhitungan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -143,11 +146,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.com.rizky.pratikum3.Main" />
       <item itemvalue="Application.Pratikum2_1" />
       <item itemvalue="Application.Pratikum2_2" />
       <item itemvalue="Application.Pratikum6_1" />
       <item itemvalue="Application.Pratikum6_1_copy" />
+      <item itemvalue="Application.com.rizky.pratikum3.Main" />
     </list>
     <recent_temporary>
       <list>

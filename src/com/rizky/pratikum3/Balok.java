@@ -28,7 +28,6 @@ public class Balok {
     public int getLebar() {
         return this.lebar;
     }
-
     public int getTinggi() {
         return this.tinggi;
     }
