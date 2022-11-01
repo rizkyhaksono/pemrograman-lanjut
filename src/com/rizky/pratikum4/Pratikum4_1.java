@@ -4,7 +4,7 @@
 
 package com.rizky.pratikum4;
 
-public class Pratikum1_1 {
+public class Pratikum4_1 {
 
     public static void main(String[] args) {
         // shortcut
