@@ -14,5 +14,7 @@ public class Pratikum4_1 {
 
         // println
         System.out.println("");
+
+        // kurang lagi 1 shortcut
     }
 }
