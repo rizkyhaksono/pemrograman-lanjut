@@ -7,7 +7,7 @@ package com.rizky.pratikum4;
 public class Pratikum4_1 {
 
     public static void main(String[] args) {
-        // shortcut
+        // shortcut for intellij idea
 
         // print
         System.out.print("");
