@@ -49,6 +49,7 @@ public class Pratikum6_1 {
                 }
             } catch (Exception e) {
                 System.out.println("Error : " + e);
+                // recursive method
                 main(args);
             }
 
