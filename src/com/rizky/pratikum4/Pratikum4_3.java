@@ -34,7 +34,5 @@ public class Pratikum4_3 {
 
         p4.setHari();
         p4.hasil();
-
-        //
     }
 }
