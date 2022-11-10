@@ -32,7 +32,13 @@ public class Pratikum4_3 {
 
         Pratikum4_3 p4 = new Pratikum4_3();
 
-        p4.setHari();
-        p4.hasil();
+         do {
+             p4.setHari();
+             p4.hasil();
+             System.out.print("Apakah anda ingin mengulang? (y/n) : ");
+             p4.scn.nextLine();
+         } while (p4.scn.nextLine().equalsIgnoreCase("y"));
+
+        System.out.println("Terima kasih telah menggunakan program ini");
     }
 }
