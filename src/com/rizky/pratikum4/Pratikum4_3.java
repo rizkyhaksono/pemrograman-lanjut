@@ -23,9 +23,13 @@ public class Pratikum4_3 {
 
     public void hasil() {
         System.out.println("Jumlah hari " + getHari());
-        System.out.println(getHari() + " hari = " + getHari() / 365
+        System.out.println(getHasil());
+    }
+
+    private String getHasil() {
+        return getHari() + " hari = " + getHari() / 365
                 + " tahun" + " " + getHari() % 365 / 30
-                + " bulan" + " " + getHari() % 365 % 30 + " hari");
+                + " bulan" + " " + getHari() % 365 % 30 + " hari";
     }
 
     public static void main(String[] args) {
