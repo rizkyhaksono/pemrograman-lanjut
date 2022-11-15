@@ -144,19 +144,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Pratikum4_3" />
       <item itemvalue="Application.Pratikum2_1" />
       <item itemvalue="Application.Pratikum2_2" />
+      <item itemvalue="Application.Pratikum4_3" />
       <item itemvalue="Application.Pratikum6_1" />
       <item itemvalue="Application.com.rizky.pratikum3.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pratikum4_3" />
         <item itemvalue="Application.com.rizky.pratikum3.Main" />
+        <item itemvalue="Application.Pratikum6_1" />
+        <item itemvalue="Application.Pratikum4_3" />
         <item itemvalue="Application.Pratikum2_2" />
         <item itemvalue="Application.Pratikum2_1" />
-        <item itemvalue="Application.Pratikum6_1" />
       </list>
     </recent_temporary>
   </component>
