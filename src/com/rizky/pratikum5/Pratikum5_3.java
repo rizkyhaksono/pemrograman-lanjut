@@ -35,24 +35,28 @@ public class Pratikum5_3 {
         }
 
         System.out.println("\nResult : ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int k : arr) {
+            System.out.print(k + " ");
         }
 
         // positive, negative and zero number
         int positive = 0, negative = 0, zero = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+        for (int j : arr) {
+            if (j > 0) {
                 positive++;
-            } else if (arr[i] < 0) {
+            } else if (j < 0) {
                 negative++;
             } else {
                 zero++;
             }
         }
 
-        System.out.println("\n\nPositive : " + positive);
-        System.out.println("Negative : " + negative);
-        System.out.println("Zero : " + zero);
+        float positiveResult = (float) positive / arr.length;
+        float negativeResult = (float) negative / arr.length;
+        float zeroResult = (float) zero / arr.length;
+
+        System.out.println("\n\nPositive : " + positiveResult);
+        System.out.println("Negative : " + negativeResult);
+        System.out.println("Zero : " + zeroResult);
     }
 }

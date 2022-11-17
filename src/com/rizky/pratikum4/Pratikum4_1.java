@@ -17,9 +17,12 @@ public class Pratikum4_1 {
         System.out.println("");
 
         // method
-//        public changeHere {
-//
-//        }
+        //public changeHere {
+
+        //}
+
+        // tahun
+        //365
 
     }
 }
