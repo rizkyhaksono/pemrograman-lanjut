@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/rizky/pratikum5/Praktikum5_3_new.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/2. Workstation/3. kuliah/Semester 3/ProLan-Demo&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/2. Workstation/3. kuliah/Semester 3/ProLan-Demo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editing.templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2. Workstation\3. kuliah\Semester 3\pratikum-1\src\com\rizky\pratikum6" />
@@ -65,7 +66,7 @@
       <recent name="com.rizky.pratikum2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Praktikum5_3_new">
+  <component name="RunManager" selected="Application.Pratikum5_3">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main$modul1" />
       <module name="pratikum-pemrograman-lanjut" />
@@ -77,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Praktikum5_3_new" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum5.Praktikum5_3_new" />
+    <configuration name="Pratikum4_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum4.Pratikum4_3" />
       <module name="pratikum-pemrograman-lanjut" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rizky.pratikum5.*" />
+          <option name="PATTERN" value="com.rizky.pratikum4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pratikum4_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum4.Pratikum4_3" />
+    <configuration name="Pratikum5_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum5.Pratikum5_3" />
       <module name="pratikum-pemrograman-lanjut" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rizky.pratikum4.*" />
+          <option name="PATTERN" value="com.rizky.pratikum5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,7 +145,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Praktikum5_3_new" />
       <item itemvalue="Application.Pratikum5_3" />
       <item itemvalue="Application.Pratikum4_3" />
       <item itemvalue="Application.Pratikum6_1" />
@@ -152,7 +152,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Praktikum5_3_new" />
+        <item itemvalue="Application.Pratikum5_3" />
         <item itemvalue="Application.Pratikum5_3" />
         <item itemvalue="Application.com.rizky.pratikum3.Main" />
         <item itemvalue="Application.Pratikum6_1" />
