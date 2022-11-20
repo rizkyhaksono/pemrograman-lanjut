@@ -23,29 +23,29 @@ public class Pratikum4_3 {
 
     public void hasil() {
         System.out.println("Jumlah hari " + getHari());
-//        System.out.println(getHasil());
+        // System.out.println(getHasil());
         System.out.println(getHari() + " hari = " + getHari() / 365
                 + " tahun" + " " + getHari() % 365 / 30
                 + " bulan" + " " + getHari() % 365 % 30 + " hari");
     }
 
     // extract method
-//    private String getHasil() {
-//        return getHari() + " hari = " + getHari() / 365
-//                + " tahun" + " " + getHari() % 365 / 30
-//                + " bulan" + " " + getHari() % 365 % 30 + " hari";
-//    }
+    // private String getHasil() {
+    // return getHari() + " hari = " + getHari() / 365
+    // + " tahun" + " " + getHari() % 365 / 30
+    // + " bulan" + " " + getHari() % 365 % 30 + " hari";
+    // }
 
     public static void main(String[] args) {
 
         Pratikum4_3 p4 = new Pratikum4_3();
 
-         do {
-             p4.setHari();
-             p4.hasil();
-             System.out.print("Apakah anda ingin mengulang? (y/n) : ");
-             p4.scn.nextLine();
-         } while (p4.scn.nextLine().equalsIgnoreCase("y"));
+        do {
+            p4.setHari();
+            p4.hasil();
+            System.out.print("Apakah anda ingin mengulang? (y/n) : ");
+            p4.scn.nextLine();
+        } while (p4.scn.nextLine().equalsIgnoreCase("y"));
 
         System.out.println("Terima kasih telah menggunakan program ini");
     }

@@ -75,6 +75,7 @@ public class Pratikum5_3 {
              }
          }
 
+         // int to float
          float positiveResult = (float) positive / arr.length;
          float negativeResult = (float) negative / arr.length;
          float zeroResult = (float) zero / arr.length;
