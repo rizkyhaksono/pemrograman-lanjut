@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class Pratikum4_3 {
 
-    private int hari;
+    private static int hari;
 
     Scanner scn = new Scanner(System.in);
 
-    public int getHari() {
+    public static int getHari() {
         return hari;
     }
 
@@ -21,20 +21,6 @@ public class Pratikum4_3 {
         this.hari = scn.nextInt();
     }
 
-    public void hasil() {
-        System.out.println("Jumlah hari " + getHari());
-        // System.out.println(getHasil());
-        System.out.println(getHari() + " hari = " + getHari() / 365
-                + " tahun" + " " + getHari() % 365 / 30
-                + " bulan" + " " + getHari() % 365 % 30 + " hari");
-    }
-
-    // extract method
-    // private String getHasil() {
-    // return getHari() + " hari = " + getHari() / 365
-    // + " tahun" + " " + getHari() % 365 / 30
-    // + " bulan" + " " + getHari() % 365 % 30 + " hari";
-    // }
 
     public static void main(String[] args) {
 
@@ -42,11 +28,20 @@ public class Pratikum4_3 {
 
         do {
             p4.setHari();
-            p4.hasil();
+
+            getHasils();
             System.out.print("Apakah anda ingin mengulang? (y/n) : ");
             p4.scn.nextLine();
         } while (p4.scn.nextLine().equalsIgnoreCase("y"));
 
         System.out.println("Terima kasih telah menggunakan program ini");
     }
+
+    private static void getHasils() {
+        System.out.println("Jumlah hari " + getHari());
+        System.out.println(getHari() + " hari = " + getHari() / 365
+                + " tahun" + " " + getHari() % 365 / 30
+                + " bulan" + " " + getHari() % 365 % 30 + " hari");
+    }
+
 }
