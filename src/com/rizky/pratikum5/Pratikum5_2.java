@@ -4,6 +4,7 @@
 
 package com.rizky.pratikum5;
 
+// java library
 import java.util.Scanner;
 
 public class Pratikum5_2 {

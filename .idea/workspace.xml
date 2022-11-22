@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum4/Pratikum4_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum4/Pratikum4_3.java" afterDir="false" />
-    </list>
+    <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,8 +142,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Pratikum5_3" />
       <item itemvalue="Application.Pratikum4_3" />
+      <item itemvalue="Application.Pratikum5_3" />
       <item itemvalue="Application.Pratikum6_1" />
       <item itemvalue="Application.com.rizky.pratikum3.Main" />
     </list>
