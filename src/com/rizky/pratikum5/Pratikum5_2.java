@@ -64,8 +64,8 @@ public class Pratikum5_2 {
         }
 
         System.out.println("Hasil : ");
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + " | ");
+        for (int datum : data) {
+            System.out.print(datum + " | ");
         }
 
         // search index of array
