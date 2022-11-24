@@ -27,10 +27,10 @@ public class Pratikum5_1 {
             System.out.print(num + " | ");
         }
 
+        // search index of array
         System.out.print("\n\nMasukkan index elemen yang mau dicari : ");
         temp = scn.nextInt();
 
         System.out.println("Nilai elemen ke-" + temp + " adalah " + data[temp]);
-
     }
 }
