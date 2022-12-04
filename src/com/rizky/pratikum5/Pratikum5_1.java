@@ -4,8 +4,6 @@
 
 package com.rizky.pratikum5;
 
-// java library
-
 public class Pratikum5_1 {
 
     public static void main(String[] args) {
