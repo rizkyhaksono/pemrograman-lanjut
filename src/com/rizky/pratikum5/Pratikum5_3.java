@@ -63,12 +63,12 @@ public class Pratikum5_3 {
              System.out.print(k + " ");
          }
 
-         // positive, negative and zero number
+         // validate positive, negative and zero number
         int positive = 0, negative = 0, zero = 0;
-         for (int j : arr) {
-             if (j > 0) {
+         for (int validate : arr) {
+             if (validate > 0) {
                  positive++;
-             } else if (j < 0) {
+             } else if (validate < 0) {
                  negative++;
              } else {
                  zero++;

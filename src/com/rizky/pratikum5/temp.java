@@ -9,24 +9,19 @@ import java.net.http.HttpResponse;
 public class temp {
 
     public void method() throws IOException, InterruptedException {
-
-        // URL url = new URL("https://jsonplaceholder.typicode.com/users");
-
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://jsonplaceholder.typicode.com/users"))
                 .build();
 
-        HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         if (response.statusCode() == 200) {
             Object pp = response.body();
-
             System.out.println(pp);
         } else {
             System.out.println("Response 404");
         }
-
     }
 
         public static void main(String[] args){

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/rizky/pratikum5/temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum5/Pratikum5_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum5/Pratikum5_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum5/Pratikum5_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/pratikum5/Pratikum5_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/pratikum5/temp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -143,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.rizky.pratikum3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum3.Main" />
+    <configuration name="temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rizky.pratikum5.temp" />
       <module name="pratikum-pemrograman-lanjut" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rizky.pratikum3.*" />
+          <option name="PATTERN" value="com.rizky.pratikum5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,19 +162,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.temp" />
       <item itemvalue="Application.Pratikum5_1" />
       <item itemvalue="Application.Pratikum5_2" />
       <item itemvalue="Application.Pratikum4_3" />
       <item itemvalue="Application.Pratikum5_3" />
-      <item itemvalue="Application.com.rizky.pratikum3.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Pratikum5_2" />
+        <item itemvalue="Application.Pratikum5_3" />
+        <item itemvalue="Application.temp" />
         <item itemvalue="Application.Pratikum5_1" />
         <item itemvalue="Application.Pratikum4_3" />
-        <item itemvalue="Application.Pratikum5_3" />
-        <item itemvalue="Application.Pratikum5_3" />
       </list>
     </recent_temporary>
   </component>
