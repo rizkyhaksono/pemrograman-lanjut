@@ -4,12 +4,8 @@
 
 package com.rizky.pratikum6;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Pratikum6_1 {
 
