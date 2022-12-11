@@ -1,15 +1,6 @@
 [String]
-Hasil inputan anda : [apa, apa]
-
-[String]
-Hasil inputan anda : [apa, apa]
-
-[String]
-Hasil inputan anda : [apa, apa]
-
-[String]
-Hasil inputan anda : [aja, aja]
-
-[String]
 Hasil inputan anda : [rizky, haksono]
+
+[Integer]
+Hasil inputan anda : [325, 2021]
 

@@ -4,8 +4,12 @@
 
 package com.rizky.praktikum6;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Pratikum6_1 {
 
@@ -54,7 +58,7 @@ public class Pratikum6_1 {
             return;
         }
 
-        System.out.print(" ");
+        System.out.print("Check inputan apakah String atau Integer... ");
         input = new Scanner(System.in);
 
         if(p6.isInteger(input.nextLine())) {
@@ -69,6 +73,11 @@ public class Pratikum6_1 {
                 System.out.println("Error : " + e);
                 main(args);
             }
+
+            System.out.println("[Integer] Hasil inputan anda : " + Arrays.toString(inNumber));
+
+            bw.write("[Integer]\nHasil inputan anda : " + Arrays.toString(inNumber) + "\n");
+            bw.newLine();
         } else {
             System.out.println("[Inputan anda adalah String]");
             inString = new String[jumlah];
@@ -81,10 +90,10 @@ public class Pratikum6_1 {
 
             bw.write("[String]\nHasil inputan anda : " + Arrays.toString(inString) + "\n");
             bw.newLine();
-
-            bw.close();
-            fw.close();
         }
+
+        bw.close();
+        fw.close();
 
         Scanner ulang = new Scanner(System.in);
 

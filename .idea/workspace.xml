@@ -6,23 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum1/Pratikum1_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum1/Pratikum1_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum1/Pratikum1_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum1/Pratikum1_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum2/Pratikum2_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum2/Pratikum2_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum2/Pratikum2_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum2/Pratikum2_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Balok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum3/Balok.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum3/Perhitungan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum3/Perhitungan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum4/Pratikum4_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum4/Pratikum4_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum4/Pratikum4_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum4/Pratikum4_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum4/Pratikum4_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum4/Pratikum4_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum5/Pratikum5_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum5/Pratikum5_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum5/Pratikum5_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/Pratikum5_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum5/Pratikum5_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum5/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum5/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum6/Pratikum6_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/Pratikum6_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rizky/pratikum6/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/Pratikum6_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/Pratikum6_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/praktikum6/Pratikum6_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/Pratikum6_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/praktikum6/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/database.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pratikum5_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rizky.praktikum5.Pratikum5_1" />
-      <module name="pratikum-pemrograman-lanjut" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rizky.praktikum5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Pratikum5_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rizky.praktikum5.Pratikum5_2" />
       <module name="pratikum-pemrograman-lanjut" />
@@ -160,6 +134,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rizky.praktikum6.sds" />
+      <module name="pratikum-pemrograman-lanjut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rizky.praktikum6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rizky.praktikum5.temp" />
       <module name="pratikum-pemrograman-lanjut" />
@@ -176,7 +163,7 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Pratikum6_1" />
-      <item itemvalue="Application.Pratikum5_1" />
+      <item itemvalue="Application.sds" />
       <item itemvalue="Application.Pratikum5_2" />
       <item itemvalue="Application.Pratikum5_3" />
       <item itemvalue="Application.temp" />
@@ -184,10 +171,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Pratikum6_1" />
+        <item itemvalue="Application.sds" />
         <item itemvalue="Application.temp" />
         <item itemvalue="Application.Pratikum5_3" />
         <item itemvalue="Application.Pratikum5_2" />
-        <item itemvalue="Application.Pratikum5_1" />
       </list>
     </recent_temporary>
   </component>
