@@ -1,0 +1,15 @@
+[String]
+Hasil inputan anda : [apa, apa]
+
+[String]
+Hasil inputan anda : [apa, apa]
+
+[String]
+Hasil inputan anda : [apa, apa]
+
+[String]
+Hasil inputan anda : [aja, aja]
+
+[String]
+Hasil inputan anda : [rizky, haksono]
+
