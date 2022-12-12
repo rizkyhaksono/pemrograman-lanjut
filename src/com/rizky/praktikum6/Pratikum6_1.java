@@ -14,14 +14,19 @@ import java.util.Scanner;
 public class Pratikum6_1 {
 
     /**
-     Exit program using system.out()
+     * Exit code for successful execution
      */
     public void exitProgram() {
         System.out.println("Program berhenti...");
         System.exit(0);
     }
 
-    // check if input is integer
+    /**
+     * @param input input from user
+     * check if input is number or not
+     * if input is number, return true
+     * if input is not number, return false
+     */
     public boolean isInteger(String input) {
         try {
             Integer.parseInt(input);
@@ -32,7 +37,8 @@ public class Pratikum6_1 {
     }
 
     /**
-     main method for driver class
+     * @throws IOException if file not found or error while reading file or writing file
+     * @throws InterruptedException if thread is interrupted while sleeping thread
      */
     public static void main (String[] args) throws IOException, InterruptedException {
 
@@ -61,7 +67,7 @@ public class Pratikum6_1 {
         System.out.print("Check inputan apakah String atau Integer... ");
         input = new Scanner(System.in);
 
-        if(p6.isInteger(input.nextLine())) {
+        if (p6.isInteger(input.nextLine())) {
             System.out.println("[Inputan anda adalah Integer]");
             inNumber = new int[jumlah];
 
@@ -95,10 +101,10 @@ public class Pratikum6_1 {
         bw.close();
         fw.close();
 
-        Scanner ulang = new Scanner(System.in);
+        Scanner loop = new Scanner(System.in);
 
         System.out.print("Masukkan data lagi? (y/n) : ");
-        String yesNo = ulang.nextLine();
+        String yesNo = loop.nextLine();
 
         while(yesNo.equals("y")) {
             main(args);
