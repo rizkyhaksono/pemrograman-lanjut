@@ -4,3 +4,9 @@ Hasil inputan anda : [rizky, haksono]
 [Integer]
 Hasil inputan anda : [325, 2021]
 
+[Integer]
+Hasil inputan anda : [2021, 325]
+
+[String]
+Hasil inputan anda : [rizky, haksono]
+

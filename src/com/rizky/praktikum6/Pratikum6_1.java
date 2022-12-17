@@ -4,10 +4,7 @@
 
 package com.rizky.praktikum6;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -38,9 +35,8 @@ public class Pratikum6_1 {
 
     /**
      * @throws IOException if file not found or error while reading file or writing file
-     * @throws InterruptedException if thread is interrupted while sleeping thread
      */
-    public static void main (String[] args) throws IOException, InterruptedException {
+    public static void main (String[] args) throws IOException {
 
         Pratikum6_1 p6 = new Pratikum6_1();
 
@@ -53,6 +49,18 @@ public class Pratikum6_1 {
 
         int[] inNumber;
         String[] inString;
+
+        // read data from file
+        FileReader fr = new FileReader(file);
+        BufferedReader br = new BufferedReader(fr);
+        String line;
+        System.out.println("Data Terkini : ");
+        while ((line = br.readLine()) != null) {
+            System.out.println(line);
+        }
+        br.close();
+        fr.close();
+
 
         try {
             System.out.print("Masukkan jumlah data  : ");

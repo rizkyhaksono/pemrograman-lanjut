@@ -10,3 +10,6 @@ Hasil inputan anda : [2021, 325]
 [String]
 Hasil inputan anda : [rizky, haksono]
 
+[String]
+Hasil inputan anda : [apa ya, ini aja deh]
+
