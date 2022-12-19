@@ -61,7 +61,6 @@ public class Pratikum6_1 {
         br.close();
         fr.close();
 
-
         try {
             System.out.print("Masukkan jumlah data  : ");
             input = new Scanner(System.in);
@@ -88,7 +87,9 @@ public class Pratikum6_1 {
                 main(args);
             }
 
-            System.out.println("[Integer] Hasil inputan anda : " + Arrays.toString(inNumber));
+            // sorting number
+            Arrays.sort(inNumber);
+            System.out.println("\n[Integer] Hasil inputan anda : " + Arrays.toString(inNumber));
 
             bw.write("[Integer]\nHasil inputan anda : " + Arrays.toString(inNumber) + "\n");
             bw.newLine();

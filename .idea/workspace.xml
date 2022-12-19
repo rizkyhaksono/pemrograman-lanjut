@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc7d8d1-7e95-4c37-becc-604d60ffefb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/dbInt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/dbString.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/Pratikum6_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/Pratikum6_1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratikum-pemrograman-lanjut/com/rizky/praktikum6/database.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rizky/praktikum6/Pratikum6_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/Pratikum6_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/praktikum6/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rizky/praktikum6/dbString.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rizky/praktikum6/dbString.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
