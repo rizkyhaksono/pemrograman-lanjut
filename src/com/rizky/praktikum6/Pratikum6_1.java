@@ -35,6 +35,8 @@ public class Pratikum6_1 {
 
     /**
      * @throws IOException if file not found or error while reading file or writing file
+     * @param args the command line arguments
+     * main method
      */
     public static void main (String[] args) throws IOException {
 
