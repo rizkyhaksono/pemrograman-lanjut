@@ -13,12 +13,12 @@ public class Pratikum5_4 {
 
         System.out.println(question);
 
-        Scanner scn = new Scanner(System.in);
+        try (Scanner scn = new Scanner(System.in)) {
+            String answer;
+            System.out.print("Jawaban : ");
+            answer = scn.nextLine();
 
-        String answer;
-        System.out.print("Jawaban : ");
-        answer = scn.nextLine();
-
-        System.out.println("Jawaban kamu : " + answer);
+            System.out.println("Jawaban kamu : " + answer);
+        }
     }
 }

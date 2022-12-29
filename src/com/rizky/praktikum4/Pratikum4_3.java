@@ -18,7 +18,7 @@ public class Pratikum4_3 {
 
     public void setHari() {
         System.out.print("Masukkan jumlah hari : ");
-        this.hari = scn.nextInt();
+        Pratikum4_3.hari = scn.nextInt();
     }
 
 

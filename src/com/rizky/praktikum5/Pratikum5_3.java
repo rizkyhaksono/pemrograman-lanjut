@@ -20,23 +20,27 @@ public class Pratikum5_3 {
 
     // loop until the input is a number
     public int inputNumber(String str) {
-        Scanner scn = new Scanner(System.in);
-        String input;
-        int number = 0;
-        boolean isNumber = false;
+        try (Scanner scn = new Scanner(System.in)) {
+            String input;
+            int number = 0;
+            boolean isNumber = false;
 
-        while (!isNumber) {
-            System.out.print(str);
-            input = scn.nextLine();
-            isNumber = isNumber(input);
-            if (isNumber) {
-                number = Integer.parseInt(input);
-            } else {
-                System.out.println("Input harus Integer!");
+            while (!isNumber) {
+                System.out.print(str);
+                input = scn.nextLine();
+                isNumber = isNumber(input);
+                if (isNumber) {
+                    number = Integer.parseInt(input);
+                } else {
+                    System.out.println("Input harus Integer!");
+                }
             }
-        }
 
-        return number;
+            return number;
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static void main(String[] args) {

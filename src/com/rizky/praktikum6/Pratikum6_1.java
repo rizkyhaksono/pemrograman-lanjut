@@ -20,9 +20,9 @@ public class Pratikum6_1 {
 
     /**
      * @param input input from user
-     * check if input is number or not
-     * if input is number, return true
-     * if input is not number, return false
+     *              check if input is number or not
+     *              if input is number, return true
+     *              if input is not number, return false
      */
     public boolean isInteger(String input) {
         try {
@@ -34,11 +34,12 @@ public class Pratikum6_1 {
     }
 
     /**
-     * @throws IOException if file not found or error while reading file or writing file
+     * @throws IOException if file not found or error while reading file or writing
+     *                     file
      * @param args the command line arguments
-     * main method
+     *             main method
      */
-    public static void main (String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         Pratikum6_1 p6 = new Pratikum6_1();
 
@@ -112,13 +113,13 @@ public class Pratikum6_1 {
         bw.close();
         fw.close();
 
-        Scanner loop = new Scanner(System.in);
+        try (Scanner loop = new Scanner(System.in)) {
+            System.out.print("Masukkan data lagi? (y/n) : ");
+            String yesNo = loop.nextLine();
 
-        System.out.print("Masukkan data lagi? (y/n) : ");
-        String yesNo = loop.nextLine();
-
-        while(yesNo.equals("y")) {
-            main(args);
+            while (yesNo.equals("y")) {
+                main(args);
+            }
         }
 
         p6.exitProgram();
