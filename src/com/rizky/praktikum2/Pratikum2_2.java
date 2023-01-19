@@ -55,71 +55,71 @@ public class Pratikum2_2 {
 
         int num;
 
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
+            try {
+                System.out.println("Welcome to Library");
 
-        try {
-            System.out.println("Welcome to Library");
+                System.out.print("Nama : ");
+                inName = input.nextLine();
+                pTwo.cekName(inName);
 
-            System.out.print("Nama : ");
-            inName = input.nextLine();
-            pTwo.cekName(inName);
+                System.out.print("From : ");
+                inFrom = input.nextLine();
+                pTwo.cekFrom(inFrom);
 
-            System.out.print("From : ");
-            inFrom = input.nextLine();
-            pTwo.cekFrom(inFrom);
+                System.out.print("Date : ");
+                inDate = input.nextInt();
+                pTwo.cekDate(inDate);
 
-            System.out.print("Date : ");
-            inDate = input.nextInt();
-            pTwo.cekDate(inDate);
+                do {
+                    if (inDate < 2018 || inDate > 2022) {
+                        System.out.print("Date : ");
+                        inDate = input.nextInt();
+                        pTwo.cekDate(inDate);
+                        num = -1;
+                    } else {
+                        num = 1;
+                    }
+                } while (num == -1);
 
-            do {
-                if (inDate < 2018 || inDate > 2022) {
-                    System.out.print("Date : ");
-                    inDate = input.nextInt();
-                    pTwo.cekDate(inDate);
-                    num = -1;
+                String bookName = inName;
+                String placeName = inFrom;
+                int dateName = inDate;
+
+                book[index-1] = bookName;
+                place[index-1] = placeName;
+                date[index-1] = dateName;
+
+
+                System.out.println("Buku berhasil ditambahan");
+                pTwo.list();
+
+                // ask to add more
+                System.out.print("\nTambah buku lagi? [y/n] ");
+                String ask = input.next();
+                if (ask.equals("y")) {
+                    index++;
+                    book = Arrays.copyOf(book, book.length + 1);
+                    place = Arrays.copyOf(place, place.length + 1);
+                    date = Arrays.copyOf(date, date.length + 1);
+                    main(args);
                 } else {
-                    num = 1;
+                    for(int i = 0; i < index; i++){
+                        int nomor = i+1;
+                        System.out.println("\nData buku ke - " + nomor);
+                        System.out.println("Nama : " + book[i]);
+                        System.out.println("From : " + place[i]);
+                        System.out.println("Date : " + date[i]);
+                    }
+                    System.out.println("\nTerima kasih telah menggunakan aplikasi ini");
+                    System.exit(0);
                 }
-            } while (num == -1);
 
-            String bookName = inName;
-            String placeName = inFrom;
-            int dateName = inDate;
-
-            book[index-1] = bookName;
-            place[index-1] = placeName;
-            date[index-1] = dateName;
-
-
-            System.out.println("Buku berhasil ditambahan");
-            pTwo.list();
-
-            // ask to add more
-            System.out.print("\nTambah buku lagi? [y/n] ");
-            String ask = input.next();
-            if (ask.equals("y")) {
-                index++;
-                book = Arrays.copyOf(book, book.length + 1);
-                place = Arrays.copyOf(place, place.length + 1);
-                date = Arrays.copyOf(date, date.length + 1);
+            } catch (Exception e) {
+                System.out.println("Buku gagal ditambahan");
+                System.out.println("Error : " + e);
                 main(args);
-            } else {
-                for(int i = 0; i < index; i++){
-                    int nomor = i+1;
-                    System.out.println("\nData buku ke - " + nomor);
-                    System.out.println("Nama : " + book[i]);
-                    System.out.println("From : " + place[i]);
-                    System.out.println("Date : " + date[i]);
-                }
-                System.out.println("\nTerima kasih telah menggunakan aplikasi ini");
-                System.exit(0);
             }
-
-        } catch (Exception e) {
-            System.out.println("Buku gagal ditambahan");
-            System.out.println("Error : " + e);
-            main(args);
         }
 
     }

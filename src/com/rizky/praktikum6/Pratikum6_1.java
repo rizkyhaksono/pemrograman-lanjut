@@ -47,67 +47,70 @@ public class Pratikum6_1 {
         FileWriter fw = new FileWriter(file, true);
         BufferedWriter bw = new BufferedWriter(fw);
 
-        Scanner input;
-        int jumlah;
+        try (Scanner input = new Scanner(System.in)) {
+            ;
+            int jumlah;
 
-        int[] inNumber;
-        String[] inString;
+            int[] inNumber;
+            String[] inString;
 
-        // read data from file
-        FileReader fr = new FileReader(file);
-        BufferedReader br = new BufferedReader(fr);
-        String line;
-        System.out.println("Data Terkini : ");
-        while ((line = br.readLine()) != null) {
-            System.out.println(line);
-        }
-        br.close();
-        fr.close();
-
-        try {
-            System.out.print("Masukkan jumlah data  : ");
-            input = new Scanner(System.in);
-            jumlah = input.nextInt();
-        } catch (Exception e) {
-            System.out.println("Input harus berupa angka!");
-            main(args);
-            return;
-        }
-
-        System.out.print("Check inputan apakah String atau Integer... ");
-        input = new Scanner(System.in);
-
-        if (p6.isInteger(input.nextLine())) {
-            System.out.println("[Inputan anda adalah Integer]");
-            inNumber = new int[jumlah];
+            // read data from file
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            System.out.println("Data Terkini : ");
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            br.close();
+            fr.close();
 
             try {
-                for (int i = 0; i < inNumber.length; i++) {
-                    inNumber[i] = input.nextInt();
-                }
+                System.out.print("Masukkan jumlah data  : ");
+                input.nextLine();
+                jumlah = input.nextInt();
             } catch (Exception e) {
-                System.out.println("Error : " + e);
+                System.out.println("Input harus berupa angka!");
                 main(args);
+                bw.close();
+                return;
             }
 
-            // sorting number
-            Arrays.sort(inNumber);
-            System.out.println("\n[Integer] Hasil inputan anda : " + Arrays.toString(inNumber));
+            System.out.print("Check inputan apakah String atau Integer... ");
+            input.nextLine();
 
-            bw.write("[Integer]\nHasil inputan anda : " + Arrays.toString(inNumber) + "\n");
-            bw.newLine();
-        } else {
-            System.out.println("[Inputan anda adalah String]");
-            inString = new String[jumlah];
+            if (p6.isInteger(input.nextLine())) {
+                System.out.println("[Inputan anda adalah Integer]");
+                inNumber = new int[jumlah];
 
-            for (int i = 0; i < inString.length; i++) {
-                inString[i] = input.nextLine();
+                try {
+                    for (int i = 0; i < inNumber.length; i++) {
+                        inNumber[i] = input.nextInt();
+                    }
+                } catch (Exception e) {
+                    System.out.println("Error : " + e);
+                    main(args);
+                }
+
+                // sorting number
+                Arrays.sort(inNumber);
+                System.out.println("\n[Integer] Hasil inputan anda : " + Arrays.toString(inNumber));
+
+                bw.write("[Integer]\nHasil inputan anda : " + Arrays.toString(inNumber) + "\n");
+                bw.newLine();
+            } else {
+                System.out.println("[Inputan anda adalah String]");
+                inString = new String[jumlah];
+
+                for (int i = 0; i < inString.length; i++) {
+                    inString[i] = input.nextLine();
+                }
+
+                System.out.println("[String] Hasil inputan anda : " + Arrays.toString(inString));
+
+                bw.write("[String]\nHasil inputan anda : " + Arrays.toString(inString) + "\n");
+                bw.newLine();
             }
-
-            System.out.println("[String] Hasil inputan anda : " + Arrays.toString(inString));
-
-            bw.write("[String]\nHasil inputan anda : " + Arrays.toString(inString) + "\n");
-            bw.newLine();
         }
 
         bw.close();
